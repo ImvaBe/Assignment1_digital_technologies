@@ -9,3 +9,12 @@ div.b {
 h2 {
   color: green;
 }
+
+title {
+  text-align: center;
+}
+
+p {
+  margin-right: 150px;
+  margin-left: 80px;
+}
