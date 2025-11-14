@@ -2,27 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Assignment 1 - Digital Technologies in Intercultural Studies</title>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <link href="styles.css" rel="stylesheet">
+    <title>Assignment 1 - Digital Technologies in Intercultural Studies</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 
-<body>
-  <h1>Assignment 1 - Digital Technologies in Intercultural Studies</h1>
-
-  
-  <button onclick="loadMarkdown('assignment1.md', 'content'); makeBackgroundWhite();">
-    Open Page 1
-  </button>
-  <button onclick="loadMarkdown('example2.md', 'content'); makeBackgroundWhite();">
-    Open Page 2
-  </button>
-
-  
-  <div id="content"></div>
-
-      
 <h2>Introduction</h2> 
 
 <p>Technological innovation has been a steady source of change since its invention. While some scientific and professional fields have more obvious areas that are affected or benefit from digital technologies, they can be relevant to any field one chooses to examine. Intercultural Studies is a field that looks at the interaction between cultures, as well as culture as a resource or a point of potential miscommunication and stereotypes. First and foremost are people the subject of studies, but that does not mean that digital technologies do not have an enormous influence. Like any social science, Intercultural Studies benefits from technological advancement, because it makes computing large sets of data easier and can be an asset in field work for example. There are certain aspects, however, that cannot be replaced by digital technologies, like participant observation or having conversations with the subjects of your study.</p>
@@ -66,22 +49,12 @@
 
 <h2>Sources</h2>
 
-    <p>Al-antari, M. A. (2024). Artificial Intelligence Advances for Medical Computer-Aided Diagnosis. MDPI - Multidisciplinary Digital Publishing Institute. https://doi.org/10.3390/books978-3-7258-1643-9 </p>
-    <p>Digital Around the World — DataReportal – Global Digital Insights. (n.d.). DataReportal – Global Digital Insights. (Accessed: 23.10.2025) https://datareportal.com/global-digital-overview</p>
-    <p>Mehta, S. R., & Al-Mahrooqi, R. (2015). Can Thinking be Taught? Linking Critical Thinking and Writing in an EFL Context. RELC Journal, 46(1), 23–36. https://doi.org/10.1177/0033688214555356</p>
-    <p>Walsh, S. (2025, October 20). Timeline Of ChatGPT Updates & Key Events. Search Engine Journal. https://www.searchenginejournal.com/history-of-chatgpt-timeline/488370/</p>
 
-  <script>
-    async function loadMarkdown(fileName, componentId) {
-      const response = await fetch(fileName);
-      const text = await response.text();
-      document.getElementById(componentId).innerHTML = marked.parse(text);
-    }
+    Al-antari, M. A. (2024). Artificial Intelligence Advances for Medical Computer-Aided Diagnosis. MDPI - Multidisciplinary Digital Publishing Institute. https://doi.org/10.3390/books978-3-7258-1643-9 
 
-    function makeBackgroundWhite() {
-      document.body.style.backgroundColor = "white";
-    }
-  </script>
-</body>
+    Digital Around the World — DataReportal – Global Digital Insights. (n.d.). DataReportal – Global Digital Insights. (Accessed: 23.10.2025) https://datareportal.com/global-digital-overview
 
+    Mehta, S. R., & Al-Mahrooqi, R. (2015). Can Thinking be Taught? Linking Critical Thinking and Writing in an EFL Context. RELC Journal, 46(1), 23–36. https://doi.org/10.1177/0033688214555356 
+
+    Walsh, S. (2025, October 20). Timeline Of ChatGPT Updates & Key Events. Search Engine Journal. https://www.searchenginejournal.com/history-of-chatgpt-timeline/488370/ 
 </html>
