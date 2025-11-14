@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link href="styles.css" rel="stylesheet">
     <script>
-    async function loadMarkdown(filePath, componentId) {
+    async function loadhtml(filePath, componentId) {
       const response = await fetch(filePath + "assignment1.md");
       const text = await response.text();
       document.getElementById(componentId).innerHTML = marked.parse(text);
@@ -15,7 +15,7 @@
     function makeBackgroundWhite() {
       document.body.style.backgroundColor = "white";
     }
-    async function loadMarkdown(filePath, componentId) {
+    async function loadhtml(filePath, componentId) {
       const response = await fetch(filePath + "assignment2.md");
       const text = await response.text();
       document.getElementById(componentId).innerHTML = marked.parse(text);
@@ -28,10 +28,10 @@
 </head>
 <h1>Assignment 1 - Digital Technologies in Intercultural Studies</h1>
     
-    <button type="button" onclick="loadMarkdown('assignment1.md', 'content'); makeBackgroundWhite();">
+    <button type="button" onclick="loadhtml('assignment1.html', 'content'); makeBackgroundWhite();">
     Assignment 1
     </button>
-    <button type="button" onclick="loadMarkdown('assignment2.md', 'content'); makeBackgroundWhite();">
+    <button type="button" onclick="loadhtml('assignment2.html', 'content'); makeBackgroundWhite();">
     Assignment 2
     </button>
 
